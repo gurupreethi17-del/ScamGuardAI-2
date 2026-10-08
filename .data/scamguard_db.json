@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "id": "usr_1791423708772_aee516",
+      "email": "demo123@gmail.com",
+      "passwordHash": "617917d961fe48883367150946e3ced3fd65049b7c1461ff4376c18ce0a4405e",
+      "name": "smily",
+      "role": "user",
+      "createdAt": "2026-10-08T01:41:48.772Z"
+    },
+    {
+      "id": "usr_1791423846928_66c30d",
+      "email": "test@example.com",
+      "passwordHash": "8eb79863838e26c65ee397fde937f7fbcc041dd2c24962a1fa1c54660508d097",
+      "name": "Test User",
+      "role": "user",
+      "createdAt": "2026-10-08T01:44:06.928Z"
+    },
+    {
+      "id": "usr_1791427093188_812ed3",
+      "email": "new_dashboard_user_1791427093156@example.com",
+      "passwordHash": "8eb79863838e26c65ee397fde937f7fbcc041dd2c24962a1fa1c54660508d097",
+      "name": "New Dashboard User",
+      "role": "user",
+      "createdAt": "2026-10-08T02:38:13.188Z"
+    }
+  ],
+  "analyses": [
+    {
+      "title": "Your order #48291 has been delivered successfull",
+      "type": "message",
+      "content": "Your order #48291 has been delivered successfully.",
+      "metadata": {},
+      "riskScore": 0,
+      "riskLevel": "LOW",
+      "classification": "SAFE",
+      "threatType": "NO_SCAM_INDICATORS",
+      "confidence": 64,
+      "summary": "No meaningful scam indicators were found in the submitted content. This does not verify the sender or destination as safe.",
+      "explanation": "No known high-risk pattern matched the submitted content. Score components: URL 0/35 · Message 0/30 · Impersonation 0/15 · Credential / payment 0/20. A low result is not proof that the content or destination is safe.",
+      "indicators": [],
+      "socialEngineeringTactics": [],
+      "technicalSignals": [
+        "URL signals: 0/35",
+        "Message signals: 0/30",
+        "Impersonation signals: 0/15",
+        "Credential / payment signals: 0/20",
+        "External reputation data was not available; no domain-age, WHOIS, blacklist, or malware lookup was performed.",
+        "Gemini was unavailable; this result uses deterministic checks only.",
+        "No URL was found in the submitted text."
+      ],
+      "recommendedActions": [
+        "No strong scam indicator was found, but do not share credentials or one-time codes in response to unsolicited messages.",
+        "Verify unexpected payment, account, or support requests through an official channel."
+      ],
+      "preventionTips": [
+        "Open official services from a saved bookmark or their official app instead of message links.",
+        "Never disclose a password, PIN, or one-time code to someone who contacts you.",
+        "Treat unsolicited payment, prize, job, investment, and remote-support requests cautiously."
+      ],
+      "userSafetyWarning": "A low or medium score is not a guarantee of safety. No live domain reputation check was performed.",
+      "incidentResponseActions": [],
+      "notes": "",
+      "label": "NO_SCAM_INDICATORS",
+      "id": "ana_1791423867217_31dec1",
+      "userId": "usr_1791423846928_66c30d",
+      "createdAt": "2026-10-08T01:44:27.217Z",
+      "status": "active"
+    },
+    {
+      "title": "URL: oursme.in",
+      "type": "url",
+      "content": "oursme.in",
+      "metadata": {
+        "url": "oursme.in"
+      },
+      "riskScore": 0,
+      "riskLevel": "LOW",
+      "classification": "SAFE",
+      "threatType": "NO_SCAM_INDICATORS",
+      "confidence": 64,
+      "summary": "No meaningful scam indicators were found in the submitted content. This does not verify the sender or destination as safe.",
+      "explanation": "No known high-risk pattern matched the submitted content. Score components: URL 0/35 · Message 0/30 · Impersonation 0/15 · Credential / payment 0/20. A low result is not proof that the content or destination is safe.",
+      "indicators": [],
+      "socialEngineeringTactics": [],
+      "technicalSignals": [
+        "URL signals: 0/35",
+        "Message signals: 0/30",
+        "Impersonation signals: 0/15",
+        "Credential / payment signals: 0/20",
+        "External reputation data was not available; no domain-age, WHOIS, blacklist, or malware lookup was performed.",
+        "Gemini was unavailable; this result uses deterministic checks only.",
+        "Inspected 1 submitted URL without visiting or resolving them."
+      ],
+      "recommendedActions": [
+        "No strong scam indicator was found, but do not share credentials or one-time codes in response to unsolicited messages.",
+        "Verify unexpected payment, account, or support requests through an official channel."
+      ],
+      "preventionTips": [
+        "Open official services from a saved bookmark or their official app instead of message links.",
+        "Never disclose a password, PIN, or one-time code to someone who contacts you.",
+        "Treat unsolicited payment, prize, job, investment, and remote-support requests cautiously."
+      ],
+      "userSafetyWarning": "A low or medium score is not a guarantee of safety. No live domain reputation check was performed.",
+      "incidentResponseActions": [],
+      "notes": "",
+      "label": "NO_SCAM_INDICATORS",
+      "id": "ana_1791423724519_f0be87",
+      "userId": "usr_1791423708772_aee516",
+      "createdAt": "2026-10-08T01:42:04.519Z",
+      "status": "active"
+    }
+  ],
+  "copilotConversations": [],
+  "copilotMessages": []
+}

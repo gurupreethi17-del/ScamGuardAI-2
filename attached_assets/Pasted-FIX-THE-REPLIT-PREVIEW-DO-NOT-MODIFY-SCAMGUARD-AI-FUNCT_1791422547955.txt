@@ -1,0 +1,88 @@
+FIX THE REPLIT PREVIEW — DO NOT MODIFY SCAMGUARD AI FUNCTIONALITY
+
+The ScamGuard AI preview is completely blank.
+
+The server reports:
+"server restarted cleanly on port 5000"
+but Replit Preview says:
+"preview proxy timed out"
+and the browser log shows:
+"failed Vite HMR websocket connection"
+
+Do NOT rebuild the application.
+Do NOT change the UI.
+Do NOT change the Gemini/scam detection logic.
+Do NOT change the database.
+Do NOT add mock/demo data.
+
+Diagnose and fix ONLY the local development/preview configuration.
+
+TRACE THE FULL FLOW:
+
+Replit Preview
+→ port 5000
+→ backend/frontend server
+→ Vite
+→ React application
+
+Check all of the following:
+
+1. Identify exactly which process is supposed to serve the frontend.
+
+2. Check package.json scripts in the root and frontend workspace.
+
+3. Check Vite configuration.
+
+4. Check whether Vite is listening on localhost only.
+   If necessary, configure it to listen on:
+   0.0.0.0
+
+5. Check whether the application is actually running on port 5000.
+
+6. Check whether the backend and frontend are conflicting over the same port.
+
+7. Check Vite HMR configuration.
+
+8. Replit Preview must work through its proxy, so configure HMR correctly for Replit.
+
+9. If the Vite dev server needs a separate frontend port, configure the Replit workflow correctly rather than forcing two servers onto the same port.
+
+10. Check the browser console and network requests from Preview.
+
+11. Determine whether the blank page is caused by:
+    - Vite HMR websocket failure
+    - incorrect host
+    - incorrect port
+    - frontend not starting
+    - proxy configuration
+    - API proxy configuration
+    - React runtime error
+    - incorrect base path
+    - missing environment variable
+
+12. Do NOT assume HMR is the only problem. Verify the actual HTTP response from the preview URL.
+
+13. If HMR is causing the preview to fail, configure Vite so the app can load even if HMR websocket is unavailable.
+
+14. Preserve the existing /api proxy behavior.
+
+15. Do not expose or modify secrets.
+
+16. Do not remove Clerk, Gemini, PostgreSQL, or existing application functionality.
+
+17. Restart the appropriate development process after making the fix.
+
+18. Verify the Preview actually renders the ScamGuard AI landing/dashboard page instead of a blank white screen.
+
+IMPORTANT:
+Do not just tell me that the server is running.
+Actually verify that Replit Preview can load the React application.
+
+If there is an existing Replit workflow/configuration, fix it rather than creating an unnecessary new project.
+
+After fixing it, report:
+- root cause
+- files changed
+- exact configuration changed
+- port being used
+- whether Preview successfully loaded

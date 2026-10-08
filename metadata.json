@@ -1,0 +1,6 @@
+{
+  "name": "ScamGuard AI",
+  "description": "Detect threats, understand the risk, and stay protected with AI-powered cybersecurity intelligence for messages, emails, URLs, screenshots, and QR codes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

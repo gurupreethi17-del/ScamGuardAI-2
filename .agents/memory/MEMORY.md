@@ -1,0 +1,1 @@
+- [ScamGuard scope](scamguard-scope.md) — Preserve the existing product and improve its detection in place.
